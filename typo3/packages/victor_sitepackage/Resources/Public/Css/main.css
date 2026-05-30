@@ -233,6 +233,7 @@ body::before {
   padding-right: 2rem;
   position: relative;
   overflow: hidden;
+  padding-bottom: 4rem;
 }
  
 .hero__bg {
@@ -988,6 +989,7 @@ body::before {
   gap: 1px;
   background: var(--color-border);
   margin-top: 2.5rem;
+  align-content: start;
 }
  
 .contact__card {
