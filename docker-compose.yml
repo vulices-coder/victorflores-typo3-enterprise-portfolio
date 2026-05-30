@@ -1,0 +1,32 @@
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: typo3
+      MYSQL_USER: typo3
+      MYSQL_PASSWORD: typo3
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+  typo3:
+    image: php:8.3-apache
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./typo3:/var/www/html
+      - ./typo3/packages:/var/www/html/packages
+    depends_on:
+      - db
+    environment:
+      TYPO3_DB_HOST: db
+      TYPO3_DB_NAME: typo3
+      TYPO3_DB_USER: typo3
+      TYPO3_DB_PASSWORD: typo3
+
+volumes:
+  db_data:

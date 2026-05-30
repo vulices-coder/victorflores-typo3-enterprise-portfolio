@@ -1,0 +1,15 @@
+# TYPO3
+typo3/public/
+typo3/var/
+typo3/vendor/
+
+# Docker
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.log
