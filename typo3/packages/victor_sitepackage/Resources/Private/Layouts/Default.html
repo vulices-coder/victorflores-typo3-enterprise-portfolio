@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CholoCreador — Victor Flores | TYPO3 Enterprise Portfolio</title>
+    <meta name="description" content="Junior Fullstack Developer. TYPO3 · PHP · Business Systems · Docker. Berlin.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Syne:wght@400;600;700;800&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <f:asset.css identifier="main" href="{f:uri.resource(path: 'Css/main.css', extensionName: 'victor_sitepackage')}" />
+</head>
+<body>
+
+    <f:render partial="Navigation/Main" />
+
+    <main>
+        <f:render section="main" />
+    </main>
+
+    <f:render partial="Footer/Main" />
+
+    <f:asset.script identifier="main" src="{f:uri.resource(path: 'JavaScript/main.js', extensionName: 'victor_sitepackage')}" />
+
+</body>
+</html>

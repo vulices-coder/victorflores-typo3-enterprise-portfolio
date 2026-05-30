@@ -1,0 +1,8 @@
+# Victor Flores Sitepackage Constants
+page {
+    fluidtemplate {
+        layoutRootPath = EXT:victor_sitepackage/Resources/Private/Layouts/
+        partialRootPath = EXT:victor_sitepackage/Resources/Private/Partials/
+        templateRootPath = EXT:victor_sitepackage/Resources/Private/Templates/
+    }
+}

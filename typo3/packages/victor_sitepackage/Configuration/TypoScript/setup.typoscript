@@ -1,0 +1,33 @@
+# Victor Flores Sitepackage Setup
+
+page = PAGE
+page {
+    typeNum = 0
+
+    includeCSS {
+        main = EXT:victor_sitepackage/Resources/Public/Css/main.css
+    }
+
+    includeJSFooter {
+        main = EXT:victor_sitepackage/Resources/Public/JavaScript/main.js
+    }
+
+    10 = FLUIDTEMPLATE
+    10 {
+        templateName = TEXT
+        templateName.stdWrap.cObject = TEXT
+        templateName.stdWrap.cObject {
+            value = Default
+        }
+
+        layoutRootPaths {
+            0 = EXT:victor_sitepackage/Resources/Private/Layouts/
+        }
+        partialRootPaths {
+            0 = EXT:victor_sitepackage/Resources/Private/Partials/
+        }
+        templateRootPaths {
+            0 = EXT:victor_sitepackage/Resources/Private/Templates/
+        }
+    }
+}
